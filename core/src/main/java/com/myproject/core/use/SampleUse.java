@@ -21,6 +21,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.adobe.cq.sightly.WCMUse;
+import com.adobe.cq.sightly.WCMUsePojo;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.designer.Design;
 import com.day.cq.wcm.api.designer.Style;
@@ -37,7 +38,8 @@ import com.day.cq.wcm.api.designer.Style;
 //import com.day.cq.wcm.api.designer.Style;
 
 
-public class SampleUse extends WCMUse
+@SuppressWarnings("deprecation")
+public class SampleUse extends WCMUsePojo
 {
 	private String pageValue="";	
 	private static final Logger log=LoggerFactory.getLogger(SampleUse.class);
